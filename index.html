@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume with DOM</title>
+    <style>
+      #sign {
+        height: 50px;
+        width: 100px;
+        margin-left: 100px;
+        margin-top: -500px;
+      }
+      #Passport {
+        height: 100px;
+        width: 100px;
+        margin-left:1300px;
+        margin-top:-50px
+      }
+      #name{
+        text-align: center;
+        margin-top: 20px;
+      }
+      body{
+        font-size: larger;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var div1 = document.createElement("div");
+      document.body.appendChild(div1);
+
+      var h2 = document.createElement("h2");
+      h2.innerText = "BONAGIRI MOUNIKA";
+      h2.setAttribute("id","name")
+      document.body.appendChild(h2);
+      
+      var imgg1 = document.createElement("img");
+      imgg1.setAttribute("src","./passport.jpg");
+      imgg1.setAttribute("id","Passport");
+      document.body.appendChild(imgg1);
+
+      var line = document.createElement("hr");
+      document.body.appendChild(line);
+
+      var details = document.createElement("details");
+      details.innerText =
+        "Seeking a role as a front-end developer so I can use my thorough knowledge of programming frameworks and development software.";
+      document.body.appendChild(details);
+
+      var summary = document.createElement("summary");
+      summary.innerText = "Carrer Objective";
+      details.appendChild(summary);
+
+      var line = document.createElement("hr");
+      document.body.appendChild(line);
+
+      var fieldset1 = document.createElement("fieldset");
+      document.body.appendChild(fieldset1);
+
+      var ul = document.createElement("ul");
+      fieldset1.appendChild(ul);
+
+      var li = document.createElement("li");
+      li.innerText = "HTML";
+      ul.appendChild(li);
+
+      var li = document.createElement("li");
+      li.innerText = "CSS";
+      ul.appendChild(li);
+
+      var li = document.createElement("li");
+      li.innerText = "JavaScript";
+      ul.appendChild(li);
+
+      var li = document.createElement("li");
+      li.innerText = "SQL";
+      ul.appendChild(li);
+
+      var legend1 = document.createElement("legend");
+      legend1.innerText = "Technical Skills";
+      fieldset1.appendChild(legend1);
+
+      var line = document.createElement("hr");
+      document.body.appendChild(line);
+
+      var fieldset1 = document.createElement("fieldset");
+      document.body.appendChild(fieldset1);
+
+      var ul = document.createElement("ul");
+      fieldset1.appendChild(ul);
+
+      var li = document.createElement("li");
+      li.innerText = "Exploring";
+      ul.appendChild(li);
+
+      var li = document.createElement("li");
+      li.innerText = "Planting";
+      ul.appendChild(li);
+
+      var li = document.createElement("li");
+      li.innerText = "Making Videos";
+      ul.appendChild(li);
+
+      var li = document.createElement("li");
+      li.innerText = "Photography";
+      ul.appendChild(li);
+
+      var legend1 = document.createElement("legend");
+      legend1.innerText = "Hobbies";
+      fieldset1.appendChild(legend1);
+
+      var line = document.createElement("hr");
+      document.body.appendChild(line);
+
+      var h4 = document.createElement("h4");
+      h4.innerText = "Declaration:";
+      document.body.appendChild(h4);
+
+      var para = document.createElement("p");
+      para.innerText =
+        "I certify that the information provided in this resume is true and accurate to the best of my knowledge.";
+      document.body.appendChild(para);
+
+      var line = document.createElement("hr");
+      document.body.appendChild(line);
+
+      var h5 = document.createElement("h5");
+      h5.innerText = "Name:Bonagiri Mounika";
+      document.body.appendChild(h5);
+
+      var h5 = document.createElement("h5");
+      h5.innerText = "Date:16-02-2024";
+      document.body.appendChild(h5);
+
+      var h5 = document.createElement("h5");
+      h5.innerText = "Signature:";
+      document.body.appendChild(h5);
+
+      var imgg = document.createElement("img");
+      imgg.setAttribute("src", "./sign.jpg.jpg");
+      imgg.setAttribute("id", "sign");
+      document.body.appendChild(imgg);
+    </script>
+  </body>
+</html>
